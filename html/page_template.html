@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery ES6 modules test page</title>
+</head>
+<body>
+  <div id="message"></div>
+  <script>
+	window.dt_bundle_source = "dt_src";
+  </script>
+  <div class="itables">
+  <table id="table_id"><thead><tr><th>A</th></tr></thead></table>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+  <script type="module">
+	let {DataTable, $} = await import(window.dt_bundle_source);
+
+	  // Define the table data
+	  const data = [];
+  
+	  // Define the dt_args
+	  let dt_args = {};
+	  dt_args["data"] = data;
+	  dt_args["dom"] =  'Bfrtip';
+	  dt_args["buttons"] = ['copyHtml5', 'excelHtml5', 'csvHtml5', 'pdfHtml5'];
+  
+	  $(document).ready(function () {
+		  // [pre-dt-code]
+		  $('#table_id').DataTable(dt_args);
+	  });
+  </script>
+  </div>
+</body>
+</html>
