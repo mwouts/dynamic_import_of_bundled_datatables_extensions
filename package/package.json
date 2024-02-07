@@ -4,7 +4,7 @@
   "description": "datatables using node",
   "main": "src/dt_with_buttons.js",
   "scripts": {
-    "build": "rollup --config"
+    "build": "vite build"
   },
   "author": "",
   "license": "MIT",
@@ -17,7 +17,7 @@
     "pdfmake": "^0.2.9"
   },
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "rollup": "^4.9.6"
+    "vite": "^5.0.12",
+    "vite-plugin-singlefile": "^1.0.0"
   }
 }
