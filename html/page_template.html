@@ -6,15 +6,11 @@
 </head>
 <body>
   <div id="message"></div>
-  <script>
-	window.dt_bundle_source = "dt_src";
-  </script>
+  <script>dt_src</script>
   <div class="itables">
   <table id="table_id"><thead><tr><th>A</th></tr></thead></table>
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
-  <script type="module">
-	  await import(window.dt_bundle_source);
-
+  <script>
 	  // Define the table data
 	  const data = [['You made it!']];
   
@@ -22,7 +18,7 @@
 	  let dt_args = {};
 	  dt_args["data"] = data;
 	  dt_args["dom"] =  'Bfrtip';
-	  dt_args["buttons"] = ['copyHtml5', 'excelHtml5', 'csvHtml5', 'pdfHtml5'];
+	  dt_args["buttons"] = ['copyHtml5', 'excelHtml5', 'csvHtml5'];
   
 	  $(document).ready(function () {
 		  // [pre-dt-code]
