@@ -11,4 +11,6 @@ import DataTable from 'datatables.net-bs5';
  
 // pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
-export { DataTable, jQuery as $};
+// https://stackoverflow.com/questions/71229017/how-do-you-export-globals-in-a-bundle-with-esbuild
+window.$ = jQuery;
+window.DataTable = DataTable;

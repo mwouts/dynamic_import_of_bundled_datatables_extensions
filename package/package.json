@@ -4,7 +4,7 @@
   "description": "datatables using node",
   "main": "src/dt_with_buttons.js",
   "scripts": {
-    "build": "esbuild src/dt_with_buttons.js --bundle --outfile=dt_bundle.js --minify"
+    "build": "esbuild src/dt_with_buttons.js --bundle --outfile=dt_bundle.js"
   },
   "author": "",
   "license": "MIT",
