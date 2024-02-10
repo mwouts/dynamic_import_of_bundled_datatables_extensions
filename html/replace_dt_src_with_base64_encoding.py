@@ -1,6 +1,6 @@
 from base64 import b64encode
 
-with open("../package/dt_bundle.js") as fp:
+with open("../package/simple_bundle.js") as fp:
     dt64 = b64encode(fp.read().encode("utf-8")).decode("ascii")
 
 with open("page_template.html") as fp:
