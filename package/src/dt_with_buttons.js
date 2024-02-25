@@ -11,6 +11,4 @@ DataTable.Buttons.pdfMake(pdfMake);
  
 pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
-// https://stackoverflow.com/questions/71229017/how-do-you-export-globals-in-a-bundle-with-esbuild
-window.$ = jQuery;
-window.DataTable = DataTable;
+export { DataTable, jQuery };
