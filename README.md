@@ -10,7 +10,7 @@ It is generated with the following commands:
 # create dt_bundle.js
 cd package
 npm install
-npm build
+npm run build
 
 # inject dt_bundle.js into index.html
 cd ../html
