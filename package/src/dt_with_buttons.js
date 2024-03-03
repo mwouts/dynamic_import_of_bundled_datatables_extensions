@@ -1,5 +1,5 @@
-import jQuery from 'jquery';
 import JSZip from 'jszip';
+import jQuery from 'jquery';
 import pdfMake from 'pdfmake';
 import pdfFonts from 'pdfmake/build/vfs_fonts';
 import DataTable from 'datatables.net-bs5';
@@ -11,4 +11,4 @@ DataTable.Buttons.pdfMake(pdfMake);
  
 pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
-export { jQuery, DataTable };
+export { DataTable, jQuery };

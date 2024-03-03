@@ -9,7 +9,8 @@ It is generated with the following commands:
 ```
 # create dt_bundle.js
 cd package
-rollup --config 
+npm install
+npm run build
 
 # inject dt_bundle.js into index.html
 cd ../html
